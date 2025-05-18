@@ -1,0 +1,97 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f9fc;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 600px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form input, .form select {
+  padding: 10px;
+  margin: 5px;
+  width: 30%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filters {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters select {
+  padding: 8px;
+  border-radius: 5px;
+}
+
+ul#taskList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.task {
+  background: #f4f6fb;
+  margin: 10px 0;
+  padding: 15px;
+  border-left: 5px solid #007bff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task.overdue {
+  border-left-color: red;
+}
+
+.task .details {
+  flex: 1;
+}
+
+.task .priority {
+  background: #ffd700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  margin-right: 10px;
+}
+
+.task .status {
+  font-size: 0.8em;
+}
+
+.task .actions {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-items-container {
+  margin: 0px;
+  padding: 0px;
+}
