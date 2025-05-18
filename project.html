@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+  
+  <div class="container">
+      <div class="row">
+    <h1>Todo List</h1>
+    <div class="form">
+    <h3>Task Title</h3>
+      <input type="text" id="taskTitle" placeholder="Enter task title" />
+      <h3>priority</h3>
+      <select id="priority">
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+        <option value="Low">Low</option>
+      </select>
+      <h3>Deadline</h3>
+      <input type="date" id="deadline" />
+      <button onclick="addTask()">+ Add Task</button>
+    </div>
+
+    <div class="filters">
+      <h5>status</h5>
+      <select id="statusFilter" onchange="renderTasks()">
+        <option value="all">All</option>
+        <option value="overdue">Overdue</option>
+        <option value="upcoming">Upcoming</option>
+      </select>
+      <h5>priority</h5>
+      <select id="priorityFilter" onchange="renderTasks()">
+        <option value="all">All</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+    </div>
+
+    <div id="taskList">
+     <input type="checkbox" /> Todos1
+     <input type="checkbox" /> Todos3
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+</div>
+  </body>
+</html>
